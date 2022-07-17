@@ -1,7 +1,27 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import styled from "styled-components";
+import { flexCenter } from "../styles";
 import styles from "../styles/Home.module.css";
+
+const FirstSection = styled.section`
+  ${flexCenter}
+
+  .importLine {
+    position: absolute;
+    top: 0;
+  }
+`;
+
+const LastSection = styled.section`
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+  }
+`;
 
 const Home: NextPage = () => {
   return (
@@ -13,10 +33,15 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <p>import &#123; JingleGordonGuo &#125; from “sydney”;</p>
-
-        <h1 className={styles.title}>&lt;JingleGordonGuo/&gt;</h1>
-        <h2>// Frontend Developer + Entrepreneur</h2>
+        <FirstSection>
+          <p className="importLine">
+            import &#123; JingleGordonGuo &#125; from “sydney”;
+          </p>
+          <>
+            <h1 className={styles.title}>&lt;JingleGordonGuo/&gt;</h1>
+            <h2>// Frontend Developer + Entrepreneur</h2>
+          </>
+        </FirstSection>
 
         <section>
           <h2>Who am I?</h2>
@@ -159,24 +184,30 @@ const Home: NextPage = () => {
           <p>Business and Science 2017-2018</p>
         </section>
 
-        <section>
-          <h2>Contact</h2>
-          LinkedIn | Discord | Email
-        </section>
+        <LastSection>
+          <div className="content">
+            <h2>Contact</h2>
+            LinkedIn | Discord | Email
+          </div>
+          <footer className={styles.footer}>
+            <a
+              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Powered by{" "}
+              <span className={styles.logo}>
+                <Image
+                  src="/vercel.svg"
+                  alt="Vercel Logo"
+                  width={72}
+                  height={16}
+                />
+              </span>
+            </a>
+          </footer>
+        </LastSection>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
     </div>
   );
 };
