@@ -45,7 +45,7 @@ const Home: NextPage = () => {
             <li>React Query</li>
             <li>Redux Toolkit</li>
             <li>NextJS</li>
-            <li>Howler</li>
+            <li>HowlerJS</li>
             <li>Python</li>
             <li>Github</li>
             <li>Vercel</li>
