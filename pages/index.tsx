@@ -42,7 +42,7 @@ const Home: NextPage = () => {
           </p>
           <>
             <h1 className={styles.title}>&lt;JingleGordonGuo/&gt;</h1>
-            <h2>// Frontend Developer + Entrepreneur</h2>
+            <h2>&#47;&#47; Frontend Developer + Entrepreneur</h2>
           </>
           <NavBox>
             <NavBtn elementId="about" />
@@ -96,7 +96,11 @@ const Home: NextPage = () => {
         <section id="experience">
           <h2>Experience</h2>
           <h3>ButterVoice</h3>
-          <a href={"https://www.buttervoice.com"} target="_blank">
+          <a
+            href={"https://www.buttervoice.com"}
+            target="_blank"
+            rel="noreferrer"
+          >
             buttervoice.com
           </a>
           <p>Full-stack developer</p>
