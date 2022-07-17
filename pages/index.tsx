@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import styled from "styled-components";
+import NavBtn from "../components/NavBtn";
 import { flexCenter } from "../styles";
 import styles from "../styles/Home.module.css";
 
@@ -23,6 +24,8 @@ const LastSection = styled.section`
   }
 `;
 
+const NavBox = styled.div``;
+
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -33,7 +36,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <FirstSection>
+        <FirstSection id="landing">
           <p className="importLine">
             import &#123; JingleGordonGuo &#125; from “sydney”;
           </p>
@@ -41,9 +44,16 @@ const Home: NextPage = () => {
             <h1 className={styles.title}>&lt;JingleGordonGuo/&gt;</h1>
             <h2>// Frontend Developer + Entrepreneur</h2>
           </>
+          <NavBox>
+            <NavBtn elementId="about" />
+            <NavBtn elementId="skills" />
+            <NavBtn elementId="experience" />
+            <NavBtn elementId="education" />
+            <NavBtn elementId="contact" />
+          </NavBox>
         </FirstSection>
 
-        <section>
+        <section id="about">
           <h2>Who am I?</h2>
           <p>
             Who am I? Well, I am a start-up guy who discovered how rewarding
@@ -56,7 +66,7 @@ const Home: NextPage = () => {
           </p>
         </section>
 
-        <section>
+        <section id="skills">
           <h2>Skills</h2>
           <ul>
             <li>Javascript</li>
@@ -83,7 +93,7 @@ const Home: NextPage = () => {
           </ul>
         </section>
 
-        <section>
+        <section id="experience">
           <h2>Experience</h2>
           <h3>ButterVoice</h3>
           <a href={"https://www.buttervoice.com"} target="_blank">
@@ -172,7 +182,7 @@ const Home: NextPage = () => {
           </ul>
         </section>
 
-        <section>
+        <section id="education">
           <h2>Education</h2>
           <h4>University of Melbourne</h4>
           <p>Design Computing 2022 - Present</p>
@@ -184,7 +194,7 @@ const Home: NextPage = () => {
           <p>Business and Science 2017-2018</p>
         </section>
 
-        <LastSection>
+        <LastSection id="contact">
           <div className="content">
             <h2>Contact</h2>
             LinkedIn | Discord | Email
