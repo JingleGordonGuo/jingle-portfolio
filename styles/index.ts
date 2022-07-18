@@ -30,6 +30,7 @@ const StyledGlobalStyle = css`
 
   * {
     box-sizing: border-box;
+    text-shadow: 0 0 8px #ffffff;
   }
 
   button {
@@ -46,7 +47,6 @@ const StyledGlobalStyle = css`
     width: 100%;
     min-height: 100vh;
     /* scroll-snap-align: start; */
-    padding: 12px;
   }
 
   main {
@@ -81,6 +81,20 @@ const StyledGlobalStyle = css`
     font-size: calc(2vw + 1em);
     @media (min-width: 1024px) {
       font-size: 1.5rem;
+    }
+  }
+
+  .frostedGlassCard {
+    ${flexCenter}
+    flex-direction: column;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.05);
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    padding: 5vw;
+    border-radius: 5vw;
+    @media (min-width: 640px) {
+      padding: 80px;
+      border-radius: 20px;
     }
   }
 

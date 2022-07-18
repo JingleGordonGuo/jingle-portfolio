@@ -7,6 +7,14 @@ export const LandingPageDiv = styled.div`
     max-width: 100vw;
     margin: 0 5vw;
 
+    h3,
+    h4,
+    span,
+    a,
+    p {
+      width: 100%;
+    }
+
     @media (min-width: 1024px) {
       max-width: 800px;
     }
@@ -35,11 +43,13 @@ export const LandingPageDiv = styled.div`
   .skillsBox {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    width: 100%;
   }
 
   .techUsedBox {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    width: 100%;
   }
 `;
 
@@ -48,6 +58,8 @@ export const FirstSection = styled.section`
   .importLine {
     position: absolute;
     top: 0;
+    text-align: center;
+    margin-top: 20px;
   }
 `;
 
