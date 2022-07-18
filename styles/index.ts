@@ -45,21 +45,57 @@ const StyledGlobalStyle = css`
     justify-content: center;
     width: 100%;
     min-height: 100%;
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
     padding: 12px;
   }
 
   main {
     ${fullScreen}
+    display: flex;
+    justify-content: center;
     overflow: hidden;
     overflow-y: scroll;
-    scroll-snap-type: y proximity;
-    scroll-behavior: smooth;
+    /* scroll-snap-type: y proximity;
+    scroll-behavior: smooth; */
   }
 
   ul {
     margin: 0;
     padding: 0;
+  }
+
+  h1,
+  h2 {
+    text-align: center;
+  }
+
+  h1 {
+    margin: 0;
+    line-height: 1.15;
+    font-size: calc(4vw + 1em);
+    @media (min-width: 1024px) {
+      font-size: 4rem;
+    }
+  }
+
+  h2 {
+    line-height: 1.5;
+    font-size: calc(2vw + 1em);
+    @media (min-width: 1024px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (min-width: 640px) {
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1024px) {
+  }
+
+  @media (min-width: 1200px) {
   }
 `;
 

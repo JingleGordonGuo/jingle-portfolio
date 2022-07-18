@@ -3,6 +3,15 @@ import styled from "styled-components";
 import { flexCenter } from "../../../styles";
 
 export const LandingPageDiv = styled.div`
+  .content {
+    max-width: 100vw;
+    margin: 0 5vw;
+
+    @media (min-width: 1024px) {
+      max-width: 800px;
+    }
+  }
+
   .footer {
     display: flex;
     padding: 2rem 0;
@@ -18,34 +27,10 @@ export const LandingPageDiv = styled.div`
     flex-grow: 1;
   }
 
-  .title {
-    margin: 0;
-    line-height: 1.15;
-    font-size: 4rem;
-  }
-
-  .title,
-  .description {
-    text-align: center;
-  }
-
-  .description {
-    margin: 4rem 0;
-    line-height: 1.5;
-    font-size: 1.5rem;
-  }
-
   .logo {
     height: 1em;
     margin-left: 0.5rem;
   }
-
-  /* @media (max-width: 600px) {
-    .grid {
-      width: 100%;
-      flex-direction: column;
-    }
-  } */
 
   .skillsBox {
     display: grid;
