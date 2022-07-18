@@ -7,6 +7,8 @@ import { flexCenter } from "../../styles";
 const LabelledIconsDiv = styled.div`
   ${flexCenter}
   flex-direction: column;
+  text-align: center;
+  padding: 12px;
   .imageBox {
     ${flexCenter}
     width: 30px;
@@ -64,7 +66,7 @@ export const IconHowlerjs = ({ subtle }: IIconProps) => {
   return <LabelledIcons img="/iconsTech/howlerjs.png" label="Howler.js" subtle={subtle} />;
 };
 
-export const IconHtml = ({ subtle }: IIconProps) => {
+export const IconHTML = ({ subtle }: IIconProps) => {
   return <LabelledIcons img="/iconsTech/html.svg" label="HTML" subtle={subtle} />;
 };
 
@@ -80,7 +82,7 @@ export const IconJavascript = ({ subtle }: IIconProps) => {
   return <LabelledIcons img="/iconsTech/javascript.svg" label="JavaScript" subtle={subtle} />;
 };
 
-export const IconNextJS = ({ subtle }: IIconProps) => {
+export const IconNextjs = ({ subtle }: IIconProps) => {
   return <LabelledIcons img="/iconsTech/nextjs.svg" label="Next.js" subtle={subtle} />;
 };
 
@@ -89,11 +91,11 @@ export const IconPhotoshop = ({ subtle }: IIconProps) => {
 };
 
 export const IconPython = ({ subtle }: IIconProps) => {
-  return <LabelledIcons img="/iconsTech/python.png" label="Python" subtle={subtle} />;
+  return <LabelledIcons img="/iconsTech/python.svg" label="Python" subtle={subtle} />;
 };
 
 export const IconReactQuery = ({ subtle }: IIconProps) => {
-  return <LabelledIcons img="/iconsTech/react_query.png" label="React Query" subtle={subtle} />;
+  return <LabelledIcons img="/iconsTech/react_query.svg" label="React Query" subtle={subtle} />;
 };
 
 export const IconReact = ({ subtle }: IIconProps) => {
@@ -104,7 +106,7 @@ export const IconRedux = ({ subtle }: IIconProps) => {
   return <LabelledIcons img="/iconsTech/redux.svg" label="Redux" subtle={subtle} />;
 };
 
-export const IconSass = ({ subtle }: IIconProps) => {
+export const IconSCSS = ({ subtle }: IIconProps) => {
   return <LabelledIcons img="/iconsTech/sass.svg" label="SCSS" subtle={subtle} />;
 };
 

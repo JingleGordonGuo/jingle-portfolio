@@ -1,7 +1,29 @@
 import Head from "next/head";
 import Image from "next/image";
 
-import { IconFirebase, IconReact } from "../../LabelledIcons";
+import {
+  IconAWS,
+  IconCSS,
+  IconFirebase,
+  IconFramer,
+  IconFramerMotion,
+  IconGitHub,
+  IconHTML,
+  IconHowlerjs,
+  IconIllustrator,
+  IconIndesign,
+  IconJavascript,
+  IconNextjs,
+  IconPhotoshop,
+  IconPython,
+  IconReact,
+  IconReactQuery,
+  IconRedux,
+  IconSCSS,
+  IconStyledComponent,
+  IconTypeScript,
+  IconVercel,
+} from "../../LabelledIcons";
 import NavBtn from "../../NavBtn";
 import { FirstSection, LandingPageDiv, LastSection } from "./styling";
 
@@ -27,8 +49,6 @@ const LandingPage = () => {
             <NavBtn elementId="education" />
             <NavBtn elementId="contact" />
           </div>
-          <IconReact />
-          <IconFirebase />
         </FirstSection>
 
         <section id="about">
@@ -43,28 +63,28 @@ const LandingPage = () => {
 
         <section id="skills">
           <h2>Skills</h2>
-          <ul>
-            <li>Javascript</li>
-            <li>Typescript</li>
-            <li>CSS</li>
-            <li>SCSS</li>
-            <li>Styled Components</li>
-            <li>Framer Motion</li>
-            <li>HTML</li>
-            <li>React</li>
-            <li>React Query</li>
-            <li>Redux Toolkit</li>
-            <li>NextJS</li>
-            <li>HowlerJS</li>
-            <li>Python</li>
-            <li>Github</li>
-            <li>Vercel</li>
-            <li>Firebase</li>
-            <li>AWS</li>
-            <li>Framer</li>
-            <li>Adobe Illustrator</li>
-            <li>Adobe Indesign</li>
-            <li>Adobe Photoshop</li>
+          <ul className="skillsBox">
+            <IconJavascript />
+            <IconTypeScript />
+            <IconCSS />
+            <IconSCSS />
+            <IconStyledComponent />
+            <IconFramerMotion />
+            <IconHTML />
+            <IconReact />
+            <IconReactQuery />
+            <IconRedux />
+            <IconNextjs />
+            <IconHowlerjs />
+            <IconPython />
+            <IconGitHub />
+            <IconVercel />
+            <IconFirebase />
+            <IconAWS />
+            <IconFramer />
+            <IconPhotoshop />
+            <IconIllustrator />
+            <IconIndesign />
           </ul>
         </section>
 

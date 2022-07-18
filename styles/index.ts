@@ -56,6 +56,11 @@ const StyledGlobalStyle = css`
     scroll-snap-type: y proximity;
     scroll-behavior: smooth;
   }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
 `;
 
 export const GlobalStyle = createGlobalStyle`
