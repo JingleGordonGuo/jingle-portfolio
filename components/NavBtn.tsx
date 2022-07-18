@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import styled from "styled-components";
 
 function capitalizeFirstLetter(string: string) {
@@ -12,8 +13,7 @@ const StyledNavButton = styled.button`
 `;
 
 const NavBtn = ({ elementId }: { elementId: string }) => {
-  const handleScroll = () =>
-    document.getElementById(elementId)?.scrollIntoView({ behavior: "smooth" });
+  const handleScroll = () => document.getElementById(elementId)?.scrollIntoView({ behavior: "smooth" });
   return (
     <StyledNavButton onClick={handleScroll}>
       <Image width={40} height={40} src={`/icons/${elementId}.png`} />
