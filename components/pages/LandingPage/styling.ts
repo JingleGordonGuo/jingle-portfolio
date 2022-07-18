@@ -52,10 +52,30 @@ export const FirstSection = styled.section`
 `;
 
 export const LastSection = styled.section`
-  .content {
+  .contactContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex: 1;
   }
+`;
+
+export const GradientDiv = styled.div`
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(
+    225deg,
+    #ffffff 0%,
+    #ffebee 10%,
+    #f3e5f5 20%,
+    #e8eaf6 30%,
+    #e1f5fe 40%,
+    #e1f5fe 50%,
+    #f1f8e9 60%,
+    #fffde7 70%,
+    #fff3e0 80%,
+    #efebe9 90%
+  );
 `;

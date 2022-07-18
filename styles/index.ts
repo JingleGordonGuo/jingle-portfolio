@@ -44,15 +44,13 @@ const StyledGlobalStyle = css`
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
     /* scroll-snap-align: start; */
     padding: 12px;
   }
 
   main {
     ${fullScreen}
-    display: flex;
-    justify-content: center;
     overflow: hidden;
     overflow-y: scroll;
     /* scroll-snap-type: y proximity;
