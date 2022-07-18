@@ -16,7 +16,7 @@ const NavBtn = ({ elementId }: { elementId: string }) => {
   const handleScroll = () => document.getElementById(elementId)?.scrollIntoView({ behavior: "smooth" });
   return (
     <StyledNavButton onClick={handleScroll}>
-      <Image width={40} height={40} src={`/icons/${elementId}.png`} />
+      <Image width={40} height={40} src={`/iconsNav/${elementId}.png`} />
       <span>{capitalizeFirstLetter(elementId)}</span>
     </StyledNavButton>
   );
