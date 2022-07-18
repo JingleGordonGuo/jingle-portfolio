@@ -51,6 +51,11 @@ export const LandingPageDiv = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   }
+
+  .techUsedBox {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  }
 `;
 
 export const FirstSection = styled.section`

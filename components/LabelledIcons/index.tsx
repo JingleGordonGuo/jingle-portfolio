@@ -1,18 +1,31 @@
 import Image from "next/image";
 
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 import { flexCenter } from "../../styles";
 
-const LabelledIconsDiv = styled.div`
+interface ILabelledIconsDivProps {
+  $subtle: boolean;
+}
+const LabelledIconsDiv = styled.div<ILabelledIconsDivProps>`
   ${flexCenter}
   flex-direction: column;
-  text-align: center;
   padding: 12px;
   .imageBox {
     ${flexCenter}
     width: 30px;
     height: 30px;
+    ${(props) =>
+      props.$subtle &&
+      css`
+        width: 24px;
+        height: 24px;
+      `}
+  }
+
+  span {
+    text-align: center;
+    height: 3em;
   }
 `;
 
@@ -23,13 +36,13 @@ interface IProps {
   height?: number;
   subtle?: boolean;
 }
-const LabelledIcons = ({ img, label, width = 30, height = 30, subtle }: IProps) => {
+const LabelledIcons = ({ img, label, width = 30, height = 30, subtle = false }: IProps) => {
   return (
-    <LabelledIconsDiv>
+    <LabelledIconsDiv $subtle={subtle}>
       <div className="imageBox">
         <Image src={img} {...{ width, height }} />
       </div>
-      <span>{label}</span>
+      {!subtle && <span>{label}</span>}
     </LabelledIconsDiv>
   );
 };
@@ -39,7 +52,7 @@ interface IIconProps {
 }
 
 export const IconAWS = ({ subtle }: IIconProps) => {
-  return <LabelledIcons img="/iconsTech/aws.svg" label="Amazon Web Service" subtle={subtle} />;
+  return <LabelledIcons img="/iconsTech/aws.svg" label="AWS" subtle={subtle} />;
 };
 
 export const IconCSS = ({ subtle }: IIconProps) => {

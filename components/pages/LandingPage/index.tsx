@@ -104,19 +104,19 @@ const LandingPage = () => {
             My goal is to create it first as a progressive web app, and eventually convert it into an IOS and Android
             application through Capacitor.
           </p>
-          <ul>
-            <li>Typescript</li>
-            <li>Styled Components</li>
-            <li>Framer Motion</li>
-            <li>React</li>
-            <li>React Query</li>
-            <li>Redux Toolkit</li>
-            <li>NextJS</li>
-            <li>Howler</li>
-            <li>Github</li>
-            <li>Vercel</li>
-            <li>Firebase</li>
-          </ul>
+          <div className="techUsedBox">
+            <IconTypeScript subtle />
+            <IconStyledComponent subtle />
+            <IconFramerMotion subtle />
+            <IconReact subtle />
+            <IconReactQuery subtle />
+            <IconRedux subtle />
+            <IconNextjs subtle />
+            <IconHowlerjs subtle />
+            <IconGitHub subtle />
+            <IconVercel subtle />
+            <IconFirebase subtle />
+          </div>
         </section>
 
         <section>
@@ -129,22 +129,21 @@ const LandingPage = () => {
             order to make users feel like they were in the same room, we designed a special 3D voice chat system that
             allowed users to hear their friends voice as if they were sitting right next to them.
           </p>
-          <ul>
-            <li>Typescript</li>
-            <li>SCSS</li>
-            <li>Styled Components</li>
-            <li>Framer Motion</li>
-            <li>React</li>
-            <li>Redux Toolkit</li>
-            <li>NextJS</li>
-            <li>Howler</li>
-            <li>Python</li>
-            <li>Github</li>
-            <li>AWS</li>
-            <li>Framer</li>
-            <li>Adobe Illustrator</li>
-            <li>Adobe Photoshop</li>
-          </ul>
+          <div className="techUsedBox">
+            <IconTypeScript subtle />
+            <IconSCSS subtle />
+            <IconFramerMotion subtle />
+            <IconReact subtle />
+            <IconRedux subtle />
+            <IconNextjs subtle />
+            <IconHowlerjs subtle />
+            <IconPython subtle />
+            <IconGitHub subtle />
+            <IconAWS subtle />
+            <IconFramer subtle />
+            <IconPhotoshop subtle />
+            <IconIllustrator subtle />
+          </div>
         </section>
 
         <section>
@@ -160,11 +159,11 @@ const LandingPage = () => {
             Technology Sydney and Australia Catholic University. We were also in talks with Mirvac and other
             Universities with getting them to adopt the system before the impact of Covid.
           </p>
-          <ul>
-            <li>Adobe Illustrator</li>
-            <li>Adobe Indesign</li>
-            <li>Adobe Photoshop</li>
-          </ul>
+          <div className="techUsedBox">
+            <IconPhotoshop subtle />
+            <IconIllustrator subtle />
+            <IconIndesign subtle />
+          </div>
         </section>
 
         <section id="education">
@@ -185,16 +184,12 @@ const LandingPage = () => {
             LinkedIn | Discord | Email
           </div>
           <footer className="footer">
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Powered by{" "}
-              <span className="logo">
-                <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-              </span>
-            </a>
+            Powered by
+            <IconVercel subtle />
+            <IconNextjs subtle />
+            <IconTypeScript subtle />
+            <IconStyledComponent subtle />
+            <IconFramerMotion subtle />
           </footer>
         </LastSection>
       </main>
