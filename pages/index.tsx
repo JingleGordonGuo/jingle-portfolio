@@ -1,7 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+
 import styled from "styled-components";
+
 import NavBtn from "../components/NavBtn";
 import { flexCenter } from "../styles";
 import styles from "../styles/Home.module.css";
@@ -37,9 +39,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <FirstSection id="landing">
-          <p className="importLine">
-            import &#123; JingleGordonGuo &#125; from “sydney”;
-          </p>
+          <p className="importLine">import &#123; JingleGordonGuo &#125; from “sydney”;</p>
           <>
             <h1 className={styles.title}>&lt;JingleGordonGuo/&gt;</h1>
             <h2>&#47;&#47; Frontend Developer + Entrepreneur</h2>
@@ -56,13 +56,10 @@ const Home: NextPage = () => {
         <section id="about">
           <h2>Who am I?</h2>
           <p>
-            Who am I? Well, I am a start-up guy who discovered how rewarding
-            building web apps felt. Seeing a project go from mere a idea to a
-            fully functional product never fails to put a smile on my face. I
-            specialize in React and used a variety of tools alongside it such as
-            NextJS and Typescript to get things done. I am team player at heart
-            who loves the synergy of collaboration and would not be here without
-            it.
+            Who am I? Well, I am a start-up guy who discovered how rewarding building web apps felt. Seeing a project go
+            from mere a idea to a fully functional product never fails to put a smile on my face. I specialize in React
+            and used a variety of tools alongside it such as NextJS and Typescript to get things done. I am team player
+            at heart who loves the synergy of collaboration and would not be here without it.
           </p>
         </section>
 
@@ -96,23 +93,18 @@ const Home: NextPage = () => {
         <section id="experience">
           <h2>Experience</h2>
           <h3>ButterVoice</h3>
-          <a
-            href={"https://www.buttervoice.com"}
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href={"https://www.buttervoice.com"} target="_blank" rel="noreferrer">
             buttervoice.com
           </a>
           <p>Full-stack developer</p>
           <p>
-            ButterVoice is an web and future mobile app that you can share short
-            digestible clips of audio for others to enjoy.
+            ButterVoice is an web and future mobile app that you can share short digestible clips of audio for others to
+            enjoy.
           </p>
           <p>
-            This is a personal project I have been working on in my spare time
-            to sharpen my skills as a web developer. My goal is to create it
-            first as a progressive web app, and eventually convert it into an
-            IOS and Android application through Capacitor.
+            This is a personal project I have been working on in my spare time to sharpen my skills as a web developer.
+            My goal is to create it first as a progressive web app, and eventually convert it into an IOS and Android
+            application through Capacitor.
           </p>
           <ul>
             <li>Typescript</li>
@@ -132,18 +124,12 @@ const Home: NextPage = () => {
         <section>
           <h3>Comova</h3>
           <p>Co-founder | Frontend Developer | UI/UX Designer</p>
+          <p>Comova was a social platform for users to watch videos and play games together.</p>
           <p>
-            Comova was a social platform for users to watch videos and play
-            games together.
-          </p>
-          <p>
-            This was an ambitious project I was fortunate to be a part of that
-            really kickstarted my passion for front-end development. We worked
-            with technologies such as WebRTC to enable voice and video
-            streaming. In order to make users feel like they were in the same
-            room, we designed a special 3D voice chat system that allowed users
-            to hear their friends voice as if they were sitting right next to
-            them.
+            This was an ambitious project I was fortunate to be a part of that really kickstarted my passion for
+            front-end development. We worked with technologies such as WebRTC to enable voice and video streaming. In
+            order to make users feel like they were in the same room, we designed a special 3D voice chat system that
+            allowed users to hear their friends voice as if they were sitting right next to them.
           </p>
           <ul>
             <li>Typescript</li>
@@ -167,17 +153,14 @@ const Home: NextPage = () => {
           <h3>BacPoc</h3>
           <p>Co-founder | Business Development Manager | Graphics Designer</p>
           <p>
-            BacPoc was a Lost and Found management system designed to
-            centralised the Lost and Found process for organisations and
-            individuals.
+            BacPoc was a Lost and Found management system designed to centralised the Lost and Found process for
+            organisations and individuals.
           </p>
           <p>
-            Part of Cohort 12 of University of Sydney’s accelerator program
-            INCUBATE, I mainly led the business aspect of the startup. At the
-            height of this project, our system was serving universities such as
-            the University of Technology Sydney and Australia Catholic
-            University. We were also in talks with Mirvac and other Universities
-            with getting them to adopt the system before the impact of Covid.
+            Part of Cohort 12 of University of Sydney’s accelerator program INCUBATE, I mainly led the business aspect
+            of the startup. At the height of this project, our system was serving universities such as the University of
+            Technology Sydney and Australia Catholic University. We were also in talks with Mirvac and other
+            Universities with getting them to adopt the system before the impact of Covid.
           </p>
           <ul>
             <li>Adobe Illustrator</li>
@@ -211,12 +194,7 @@ const Home: NextPage = () => {
             >
               Powered by{" "}
               <span className={styles.logo}>
-                <Image
-                  src="/vercel.svg"
-                  alt="Vercel Logo"
-                  width={72}
-                  height={16}
-                />
+                <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
               </span>
             </a>
           </footer>
