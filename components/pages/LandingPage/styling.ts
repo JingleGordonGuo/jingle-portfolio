@@ -40,6 +40,10 @@ export const LandingPageDiv = styled.div`
     margin-left: 0.5rem;
   }
 
+  .NavBox {
+    display: flex;
+  }
+
   .skillsBox {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));

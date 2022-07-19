@@ -43,7 +43,7 @@ const LandingPage = () => {
                 <h1 className="title">&lt;JingleGordonGuo/&gt;</h1>
                 <h2>&#47;* Frontend Developer + Entrepreneur *&#47;</h2>
               </>
-              <div>
+              <div className="NavBox">
                 <NavBtn elementId="about" />
                 <NavBtn elementId="skills" />
                 <NavBtn elementId="experience" />
