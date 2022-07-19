@@ -1,5 +1,7 @@
 import Head from "next/head";
 
+import { AnimatePresence } from "framer-motion";
+
 import {
   IconAWS,
   IconCSS,
@@ -23,10 +25,13 @@ import {
   IconTypeScript,
   IconVercel,
 } from "../../LabelledIcons";
+import LoadingScreen from "../../LoadingScreen";
+import { useImagesAllLoaded } from "../../LoadingScreen/scripts";
 import NavBtn from "../../NavBtn";
 import { FirstSection, GradientDiv, LandingPageDiv, LastSection } from "./styling";
 
 const LandingPage = () => {
+  const loaded = useImagesAllLoaded();
   return (
     <LandingPageDiv>
       <Head>
@@ -34,6 +39,9 @@ const LandingPage = () => {
         <meta name="description" content="My Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <AnimatePresence>{!loaded && <LoadingScreen key="loadingScreen" />}</AnimatePresence>
+
       <main className="main">
         <GradientDiv>
           <div className="content">
