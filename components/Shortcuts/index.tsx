@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import { AnimatePresence } from "framer-motion";
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 
 import { scrollTo } from "../../scripts/scrollTo";
@@ -25,16 +27,46 @@ const ShortcutsDiv = styled.div`
   }
 `;
 
-const Shortcuts = () => {
+interface IProps {
+  mainRef: React.RefObject<HTMLDivElement>;
+}
+const Shortcuts = ({ mainRef }: IProps) => {
+  const [viewPortHeight, setViewPortHeight] = useState(1000);
+  const [show, setShow] = useState(false);
+
+  const onScroll = () => {
+    if (!mainRef.current) return;
+    if (mainRef.current.scrollTop > viewPortHeight) return setShow(true);
+    setShow(false);
+  };
+  const onResize = () => {
+    setViewPortHeight(window.innerHeight);
+    onScroll();
+  };
+
+  useEffect(() => {
+    setViewPortHeight(window.innerHeight);
+    mainRef.current?.addEventListener("scroll", onScroll);
+    window.addEventListener("resize", onResize);
+    return () => {
+      mainRef.current?.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onResize);
+    };
+  }, [mainRef]);
+
   return (
-    <ShortcutsDiv>
-      <button>
-        <Image src="/iconsNav/menu.svg" width={30} height={30} />
-      </button>
-      <button onClick={() => scrollTo("landing")}>
-        <Image src="/iconsNav/up.svg" width={30} height={30} />
-      </button>
-    </ShortcutsDiv>
+    <AnimatePresence>
+      {show && (
+        <ShortcutsDiv>
+          <button>
+            <Image src="/iconsNav/menu.svg" width={30} height={30} />
+          </button>
+          <button onClick={() => scrollTo("landing")}>
+            <Image src="/iconsNav/up.svg" width={30} height={30} />
+          </button>
+        </ShortcutsDiv>
+      )}
+    </AnimatePresence>
   );
 };
 

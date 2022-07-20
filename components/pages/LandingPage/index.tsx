@@ -1,6 +1,7 @@
 import Head from "next/head";
 
 import { AnimatePresence, motion } from "framer-motion";
+import { useRef } from "react";
 
 import {
   IconAWS,
@@ -33,6 +34,7 @@ import { FirstSection, GradientDiv, LandingPageDiv, LastSection, motionFrostedGl
 
 const LandingPage = () => {
   const loaded = useImagesAllLoaded();
+  const mainRef = useRef<HTMLDivElement>(null);
   return (
     <LandingPageDiv>
       <Head>
@@ -43,9 +45,9 @@ const LandingPage = () => {
 
       <AnimatePresence>{!loaded && <LoadingScreen key="loadingScreen" />}</AnimatePresence>
 
-      <main className="main">
+      <main className="main" ref={mainRef}>
         <GradientDiv>
-          <Shortcuts />
+          <Shortcuts mainRef={mainRef} />
           <div className="content">
             <FirstSection id="landing">
               <span className="importLine">import &#123; JingleGordonGuo &#125; from “sydney”;</span>
