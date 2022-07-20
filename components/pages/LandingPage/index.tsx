@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 import {
   IconAWS,
@@ -28,7 +28,7 @@ import {
 import LoadingScreen from "../../LoadingScreen";
 import { useImagesAllLoaded } from "../../LoadingScreen/scripts";
 import NavBtn from "../../NavBtn";
-import { FirstSection, GradientDiv, LandingPageDiv, LastSection } from "./styling";
+import { FirstSection, GradientDiv, LandingPageDiv, LastSection, motionFrostedGlass } from "./styling";
 
 const LandingPage = () => {
   const loaded = useImagesAllLoaded();
@@ -61,7 +61,7 @@ const LandingPage = () => {
             </FirstSection>
 
             <section id="about">
-              <div className="frostedGlassCard">
+              <motion.div className="frostedGlassCard" {...motionFrostedGlass}>
                 <h2>Who am I?</h2>
                 <p>Well, I am a start-up guy who discovered how rewarding building web apps felt.</p>
                 <p>
@@ -72,11 +72,11 @@ const LandingPage = () => {
                   At heart, I am a team player who loves the synergy of collaboration with a dash of competition and
                   would not be where I am today without it.
                 </p>
-              </div>
+              </motion.div>
             </section>
 
             <section id="skills">
-              <div className="frostedGlassCard">
+              <motion.div className="frostedGlassCard" {...motionFrostedGlass}>
                 <h2>Skills</h2>
                 <ul className="skillsBox">
                   <IconJavascript />
@@ -101,11 +101,11 @@ const LandingPage = () => {
                   <IconIllustrator />
                   <IconIndesign />
                 </ul>
-              </div>
+              </motion.div>
             </section>
 
             <section id="experience">
-              <div className="frostedGlassCard">
+              <motion.div className="frostedGlassCard" {...motionFrostedGlass}>
                 <h2>Experience</h2>
                 <h3>ButterVoice</h3>
                 <a href={"https://www.buttervoice.com"} target="_blank" rel="noreferrer">
@@ -134,11 +134,11 @@ const LandingPage = () => {
                   <IconVercel subtle />
                   <IconFirebase subtle />
                 </div>
-              </div>
+              </motion.div>
             </section>
 
             <section>
-              <div className="frostedGlassCard">
+              <motion.div className="frostedGlassCard" {...motionFrostedGlass}>
                 <h3>Comova</h3>
                 <p>Co-founder | Frontend Developer | UI/UX Designer</p>
                 <p>Comova was a social platform for users to watch videos and play games together.</p>
@@ -163,11 +163,11 @@ const LandingPage = () => {
                   <IconPhotoshop subtle />
                   <IconIllustrator subtle />
                 </div>
-              </div>
+              </motion.div>
             </section>
 
             <section>
-              <div className="frostedGlassCard">
+              <motion.div className="frostedGlassCard" {...motionFrostedGlass}>
                 <h3>BacPoc</h3>
                 <p>Co-founder | Business Development Manager | Graphics Designer</p>
                 <p>
@@ -185,11 +185,11 @@ const LandingPage = () => {
                   <IconIllustrator subtle />
                   <IconIndesign subtle />
                 </div>
-              </div>
+              </motion.div>
             </section>
 
             <section id="education">
-              <div className="frostedGlassCard">
+              <motion.div className="frostedGlassCard" {...motionFrostedGlass}>
                 <h2>Education</h2>
                 <h4>University of Melbourne</h4>
                 <p>Design Computing 2022 - Present</p>
@@ -199,7 +199,7 @@ const LandingPage = () => {
                 <p>Disruptive Strategy 2019</p>
                 <h4>University of Technology Sydney</h4>
                 <p>Business and Science 2017-2018</p>
-              </div>
+              </motion.div>
             </section>
 
             <LastSection id="contact">

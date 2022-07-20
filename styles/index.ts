@@ -84,20 +84,6 @@ const StyledGlobalStyle = css`
     }
   }
 
-  .frostedGlassCard {
-    ${flexCenter}
-    flex-direction: column;
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.05);
-    background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(5px);
-    padding: 5vw;
-    border-radius: 5vw;
-    @media (min-width: 640px) {
-      padding: 80px;
-      border-radius: 20px;
-    }
-  }
-
   @media (min-width: 640px) {
   }
 
