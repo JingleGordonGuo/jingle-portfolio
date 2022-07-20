@@ -12,18 +12,41 @@ const StyledNavButton = styled.button`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80px;
-  height: 80px;
+  justify-content: center;
+  width: 74px;
+  height: 60px;
   border-radius: 12px;
+  @media (min-width: 640px) {
+    width: 80px;
+    margin: 0 1vw;
+  }
+
+  .imgBox {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    @media (min-width: 640px) {
+      width: 36px;
+      height: 36px;
+    }
+  }
+
   span {
     padding-top: 4px;
+    font-weight: 600;
+    font-size: 12px;
+    @media (min-width: 640px) {
+      font-size: 12px;
+    }
   }
 `;
 
 const NavBtn = ({ elementId }: { elementId: string }) => {
   return (
     <StyledNavButton onClick={() => scrollTo(elementId)}>
-      <Image width={36} height={36} src={`/iconsNav/${elementId}.png`} />
+      <div className="imgBox">
+        <Image src={`/iconsNav/${elementId}.png`} layout="fill" />
+      </div>
       <span>{capitalizeFirstLetter(elementId)}</span>
     </StyledNavButton>
   );

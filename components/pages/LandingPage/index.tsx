@@ -89,19 +89,19 @@ const LandingPage = () => {
                 <ul className="skillsBox">
                   <IconJavascript />
                   <IconTypeScript />
-                  <IconCSS />
+                  {/* <IconCSS /> */}
                   <IconSCSS />
                   <IconStyledComponent />
                   <IconFramerMotion />
-                  <IconHTML />
+                  {/* <IconHTML /> */}
                   <IconReact />
-                  <IconReactQuery />
-                  <IconRedux />
+                  {/* <IconReactQuery /> */}
+                  {/* <IconRedux /> */}
                   <IconNextjs />
-                  <IconHowlerjs />
+                  {/* <IconHowlerjs /> */}
                   <IconPython />
                   <IconGitHub />
-                  <IconVercel />
+                  {/* <IconVercel /> */}
                   <IconFirebase />
                   <IconAWS />
                   <IconFramer />
