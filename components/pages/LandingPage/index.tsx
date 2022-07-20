@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 
 import { AnimatePresence, motion } from "framer-motion";
 import { useRef } from "react";
@@ -67,6 +68,9 @@ const LandingPage = () => {
             <section id="about">
               <motion.div className="frostedGlassCard" {...motionFrostedGlass}>
                 <h2>Who am I?</h2>
+                <div className="profilePicBox">
+                  <Image src="/profile.jpg" width={160} height={160} className="profilePic" />
+                </div>
                 <p>Well, I am a start-up guy who discovered how rewarding building web apps felt.</p>
                 <p>
                   I specialize in React and used a variety of tools alongside it such as NextJS and Typescript to get

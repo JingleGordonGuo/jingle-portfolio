@@ -20,6 +20,14 @@ export const LandingPageDiv = styled.div`
     }
   }
 
+  .profilePicBox {
+    margin: 24px;
+  }
+
+  .profilePic {
+    border-radius: 10%;
+  }
+
   .footer {
     display: flex;
     padding: 2rem 0;
