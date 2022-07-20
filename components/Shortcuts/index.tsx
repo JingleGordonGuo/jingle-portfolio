@@ -38,26 +38,18 @@ interface IProps {
   mainRef: React.RefObject<HTMLDivElement>;
 }
 const Shortcuts = ({ mainRef }: IProps) => {
-  const [viewPortHeight, setViewPortHeight] = useState(1000);
   const [show, setShow] = useState(false);
 
   const onScroll = () => {
     if (!mainRef.current) return;
-    if (mainRef.current.scrollTop > viewPortHeight) return setShow(true);
+    if (mainRef.current.scrollTop > window.innerHeight) return setShow(true);
     setShow(false);
-  };
-  const onResize = () => {
-    setViewPortHeight(window.innerHeight);
-    onScroll();
   };
 
   useEffect(() => {
-    setViewPortHeight(window.innerHeight);
     mainRef.current?.addEventListener("scroll", onScroll);
-    window.addEventListener("resize", onResize);
     return () => {
       mainRef.current?.removeEventListener("scroll", onScroll);
-      window.removeEventListener("resize", onResize);
     };
   }, [mainRef]);
 
