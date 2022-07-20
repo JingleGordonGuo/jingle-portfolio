@@ -28,6 +28,7 @@ import {
 import LoadingScreen from "../../LoadingScreen";
 import { useImagesAllLoaded } from "../../LoadingScreen/scripts";
 import NavBtn from "../../NavBtn";
+import Shortcuts from "../../Shortcuts";
 import { FirstSection, GradientDiv, LandingPageDiv, LastSection, motionFrostedGlass } from "./styling";
 
 const LandingPage = () => {
@@ -44,6 +45,7 @@ const LandingPage = () => {
 
       <main className="main">
         <GradientDiv>
+          <Shortcuts />
           <div className="content">
             <FirstSection id="landing">
               <span className="importLine">import &#123; JingleGordonGuo &#125; from “sydney”;</span>
