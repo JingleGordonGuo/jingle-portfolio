@@ -1,13 +1,13 @@
 import Image from "next/image";
 
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 
 import { scrollTo } from "../../scripts/scrollTo";
 import { flexCenter } from "../../styles";
 
-const ShortcutsDiv = styled.div`
+const ShortcutsDiv = styled(motion.div)`
   position: fixed;
   top: 0;
   right: 0;
@@ -26,6 +26,13 @@ const ShortcutsDiv = styled.div`
     box-shadow: 4px 4px 10px #bebebe, -4px -4px 10px #ffffff;
   }
 `;
+
+const motionOpacity = {
+  initial: { opacity: 0 },
+  animate: { opacity: 1 },
+  exit: { opacity: 0 },
+  transition: { duration: 0.3 },
+};
 
 interface IProps {
   mainRef: React.RefObject<HTMLDivElement>;
@@ -57,7 +64,7 @@ const Shortcuts = ({ mainRef }: IProps) => {
   return (
     <AnimatePresence>
       {show && (
-        <ShortcutsDiv>
+        <ShortcutsDiv {...motionOpacity}>
           <button>
             <Image src="/iconsNav/menu.svg" width={30} height={30} />
           </button>
