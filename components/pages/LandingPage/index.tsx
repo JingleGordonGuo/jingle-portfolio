@@ -53,7 +53,7 @@ const LandingPage = () => {
               <span className="importLine">import &#123; JingleGordonGuo &#125; from “sydney”;</span>
               <>
                 <h1 className="title">&lt;JingleGordonGuo/&gt;</h1>
-                <h2>&#47;* Frontend Developer + Entrepreneur *&#47;</h2>
+                <h2 className="role">&#47;* Frontend Developer + Entrepreneur *&#47;</h2>
               </>
               <div className="NavBox">
                 <NavBtn elementId="about" />
@@ -115,7 +115,7 @@ const LandingPage = () => {
                 <a href={"https://www.buttervoice.com"} target="_blank" rel="noreferrer">
                   buttervoice.com
                 </a>
-                <p>Full-stack developer</p>
+                <p className="role">Full-stack developer</p>
                 <p>
                   ButterVoice is an web and future mobile app that you can share short digestible clips of audio for
                   others to enjoy.
@@ -144,7 +144,7 @@ const LandingPage = () => {
             <section>
               <motion.div className="frostedGlassCard" {...motionFrostedGlass}>
                 <h3>Comova</h3>
-                <p>Co-founder | Frontend Developer | UI/UX Designer</p>
+                <p className="role">Co-founder | Frontend Developer | UI/UX Designer</p>
                 <p>Comova was a social platform for users to watch videos and play games together.</p>
                 <p>
                   This was an ambitious project I was fortunate to be a part of that really kickstarted my passion for
@@ -173,7 +173,7 @@ const LandingPage = () => {
             <section>
               <motion.div className="frostedGlassCard" {...motionFrostedGlass}>
                 <h3>BacPoc</h3>
-                <p>Co-founder | Business Development Manager | Graphics Designer</p>
+                <p className="role">Co-founder | Business Development Manager | Graphics Designer</p>
                 <p>
                   BacPoc was a Lost and Found management system designed to centralised the Lost and Found process for
                   organisations and individuals.
@@ -192,17 +192,27 @@ const LandingPage = () => {
               </motion.div>
             </section>
 
-            <section id="education">
+            <section className="educationSection" id="education">
               <motion.div className="frostedGlassCard" {...motionFrostedGlass}>
                 <h2>Education</h2>
                 <h4>University of Melbourne</h4>
-                <p>Design Computing 2022 - Present</p>
+                <p>
+                  Design Computing <span className="timeframe">| 2022 - Present</span>
+                </p>
                 <h4>Harvard Business School Online</h4>
-                <p>Negotiation Mastery 2021</p>
-                <p>Leadership Principles 2019</p>
-                <p>Disruptive Strategy 2019</p>
+                <p>
+                  Negotiation Mastery <span className="timeframe">| 2021</span>
+                </p>
+                <p>
+                  Leadership Principles <span className="timeframe">| 2019</span>
+                </p>
+                <p>
+                  Disruptive Strategy <span className="timeframe">| 2019</span>
+                </p>
                 <h4>University of Technology Sydney</h4>
-                <p>Business and Science 2017-2018</p>
+                <p>
+                  Business and Science <span className="timeframe">| 2017 - 2018</span>
+                </p>
               </motion.div>
             </section>
 

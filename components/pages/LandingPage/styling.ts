@@ -28,16 +28,9 @@ export const LandingPageDiv = styled.div`
     align-items: center;
   }
 
-  .footer a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-  }
-
-  .logo {
-    height: 1em;
-    margin-left: 0.5rem;
+  .role,
+  .timeframe {
+    color: #757575;
   }
 
   .NavBox {
@@ -67,6 +60,12 @@ export const LandingPageDiv = styled.div`
     @media (min-width: 640px) {
       padding: 80px;
       border-radius: 20px;
+    }
+  }
+
+  .educationSection {
+    p {
+      margin-left: 44px;
     }
   }
 `;

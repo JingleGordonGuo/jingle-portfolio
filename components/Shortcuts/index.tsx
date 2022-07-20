@@ -65,9 +65,9 @@ const Shortcuts = ({ mainRef }: IProps) => {
     <AnimatePresence>
       {show && (
         <ShortcutsDiv {...motionOpacity}>
-          <button>
+          {/* <button>
             <Image src="/iconsNav/menu.svg" width={30} height={30} />
-          </button>
+          </button> */}
           <button onClick={() => scrollTo("landing")}>
             <Image src="/iconsNav/up.svg" width={30} height={30} />
           </button>

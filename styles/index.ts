@@ -84,6 +84,11 @@ const StyledGlobalStyle = css`
     }
   }
 
+  a {
+    color: #0091ea;
+    font-weight: 600;
+  }
+
   @media (min-width: 640px) {
   }
 
