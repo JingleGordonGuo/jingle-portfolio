@@ -14,6 +14,19 @@ export const fullScreen = css`
   height: 100%;
 `;
 
+export const neumorphic = css`
+  background: linear-gradient(145deg, #ffffff, #cccccc);
+  box-shadow: 4px 4px 10px #bebebe, -4px -4px 10px #ffffff;
+  &:hover {
+    background: #eeeeee;
+    box-shadow: 4px 4px 10px #bebebe, -4px -4px 10px #ffffff;
+  }
+  &:active {
+    background: linear-gradient(145deg, #cccccc, #ffffff);
+    box-shadow: 4px 4px 10px #bebebe, -4px -4px 10px #ffffff;
+  }
+`;
+
 const StyledGlobalStyle = css`
   html,
   body {
@@ -30,7 +43,6 @@ const StyledGlobalStyle = css`
 
   * {
     box-sizing: border-box;
-    text-shadow: 0 0 8px #ffffff;
   }
 
   button {
@@ -69,7 +81,6 @@ const StyledGlobalStyle = css`
 
   h1 {
     margin: 0;
-    line-height: 1.15;
     font-size: calc(4vw + 1em);
     @media (min-width: 1024px) {
       font-size: 4rem;
@@ -77,7 +88,6 @@ const StyledGlobalStyle = css`
   }
 
   h2 {
-    line-height: 1.5;
     font-size: calc(2vw + 1em);
     @media (min-width: 1024px) {
       font-size: 1.5rem;

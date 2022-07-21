@@ -2,14 +2,15 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import styled from "styled-components";
 
+import { neumorphic } from "../../styles";
+
 const StyledCopyBtn = styled.button`
+  ${neumorphic}
   overflow: hidden;
   width: 80px;
   height: 36px;
   font-weight: 600;
   border-radius: 12px;
-  background: linear-gradient(145deg, #ffffff, #cccccc);
-  box-shadow: 4px 4px 10px #bebebe, -4px -4px 10px #ffffff;
 `;
 
 const MotionSlideUp = {

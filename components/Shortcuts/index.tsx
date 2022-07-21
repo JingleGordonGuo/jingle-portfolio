@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 
 import { scrollTo } from "../../scripts/scrollTo";
-import { flexCenter } from "../../styles";
+import { flexCenter, neumorphic } from "../../styles";
 
 const ShortcutsDiv = styled(motion.div)`
   position: fixed;
@@ -18,12 +18,11 @@ const ShortcutsDiv = styled(motion.div)`
 
   button {
     ${flexCenter}
+    ${neumorphic}
     width: 40px;
     height: 40px;
     margin-bottom: 12px;
     border-radius: 10px;
-    background: linear-gradient(145deg, #ffffff, #cccccc);
-    box-shadow: 4px 4px 10px #bebebe, -4px -4px 10px #ffffff;
   }
 `;
 
