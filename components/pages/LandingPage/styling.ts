@@ -88,15 +88,6 @@ export const FirstSection = styled.section`
   }
 `;
 
-export const LastSection = styled.section`
-  .contactContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex: 1;
-  }
-`;
-
 export const GradientDiv = styled.div`
   position: absolute;
   width: 100%;

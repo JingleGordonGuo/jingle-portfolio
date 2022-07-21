@@ -4,6 +4,7 @@ import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRef } from "react";
 
+import ContactOptions from "../../ContactOptions";
 import {
   IconAWS,
   IconCSS,
@@ -31,7 +32,7 @@ import LoadingScreen from "../../LoadingScreen";
 import { useImagesAllLoaded } from "../../LoadingScreen/scripts";
 import NavBtn from "../../NavBtn";
 import Shortcuts from "../../Shortcuts";
-import { FirstSection, GradientDiv, LandingPageDiv, LastSection, motionFrostedGlass } from "./styling";
+import { FirstSection, GradientDiv, LandingPageDiv, motionFrostedGlass } from "./styling";
 
 const LandingPage = () => {
   const loaded = useImagesAllLoaded();
@@ -234,11 +235,8 @@ const LandingPage = () => {
               </motion.div>
             </section>
 
-            <LastSection id="contact">
-              <div className="contactContent">
-                <h2>Contact</h2>
-                LinkedIn | Discord | Email
-              </div>
+            <section id="contact">
+              <ContactOptions />
               <footer className="footer">
                 Powered by
                 <IconVercel subtle />
@@ -247,7 +245,7 @@ const LandingPage = () => {
                 <IconStyledComponent subtle />
                 <IconFramerMotion subtle />
               </footer>
-            </LastSection>
+            </section>
           </div>
         </GradientDiv>
       </main>
