@@ -149,6 +149,13 @@ const LandingPage = () => {
               <motion.div className="frostedGlassCard" {...motionFrostedGlass}>
                 <h3>Comova</h3>
                 <p className="role">Co-founder | Frontend Developer | UI/UX Designer</p>
+                <a
+                  href="https://www.reddit.com/r/reactjs/comments/ohxuot/made_a_website_with_friends_to_watch_videos_on/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Video Demo on Reddit
+                </a>
                 <p>Comova was a social platform for users to watch videos and play games together.</p>
                 <p>
                   This was an ambitious project I was fortunate to be a part of that really kickstarted my passion for
@@ -178,6 +185,13 @@ const LandingPage = () => {
               <motion.div className="frostedGlassCard" {...motionFrostedGlass}>
                 <h3>BacPoc</h3>
                 <p className="role">Co-founder | Business Development Manager | Graphics Designer</p>
+                <a
+                  href="https://incubate.org.au/wp-content/uploads/2020/03/Incubate_DemoDayBooklet_Class-12-Winter-2018.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  BacPoc INCUBATE Booklet
+                </a>
                 <p>
                   BacPoc was a Lost and Found management system designed to centralised the Lost and Found process for
                   organisations and individuals.
