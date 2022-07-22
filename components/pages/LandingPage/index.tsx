@@ -70,7 +70,8 @@ const LandingPage = () => {
               <motion.div className="frostedGlassCard" {...motionFrostedGlass}>
                 <h2>Who am I?</h2>
                 <div className="profilePicBox">
-                  <Image src="/profile.jpg" width={160} height={160} className="profilePic" />
+                  {/* <Image src="/profile.jpg" width={160} height={160} className="profilePic" /> */}
+                  <img src="/profile.jpg" className="profilePic" alt="Profile Picture" />
                 </div>
                 <p>Well, I am a start-up guy who discovered how rewarding building web apps felt.</p>
                 <p>

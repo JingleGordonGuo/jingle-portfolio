@@ -26,6 +26,8 @@ export const LandingPageDiv = styled.div`
 
   .profilePic {
     border-radius: 10%;
+    width: 160px;
+    height: 160px;
   }
 
   .footer {

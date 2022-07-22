@@ -40,7 +40,8 @@ const LabelledIcons = ({ img, label, width = 30, height = 30, subtle = false }: 
   return (
     <LabelledIconsDiv $subtle={subtle}>
       <div className="imageBox">
-        <Image src={img} {...{ width, height }} />
+        {/* <Image src={img} {...{ width, height }} alt={label} /> */}
+        <img src={img} style={{ width, height }} alt={label} />
       </div>
       {!subtle && <span>{label}</span>}
     </LabelledIconsDiv>

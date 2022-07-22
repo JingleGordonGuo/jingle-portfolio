@@ -45,7 +45,8 @@ const NavBtn = ({ elementId }: { elementId: string }) => {
   return (
     <StyledNavButton onClick={() => scrollTo(elementId)}>
       <div className="imgBox">
-        <Image src={`/iconsNav/${elementId}.png`} layout="fill" />
+        {/* <Image src={`/iconsNav/${elementId}.png`} layout="fill" alt={elementId} /> */}
+        <img src={`/iconsNav/${elementId}.png`} style={{ width: "100%", height: "100%" }} alt={elementId} />
       </div>
       <span>{capitalizeFirstLetter(elementId)}</span>
     </StyledNavButton>
