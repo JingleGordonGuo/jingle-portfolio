@@ -88,7 +88,7 @@ const LandingPage = () => {
             <section id="skills">
               <motion.div className="frostedGlassCard" {...motionFrostedGlass}>
                 <h2>Skills</h2>
-                <ul className="skillsBox">
+                <div className="skillsBox">
                   <IconJavascript />
                   <IconTypeScript />
                   {/* <IconCSS /> */}
@@ -110,7 +110,7 @@ const LandingPage = () => {
                   <IconPhotoshop />
                   <IconIllustrator />
                   <IconIndesign />
-                </ul>
+                </div>
               </motion.div>
             </section>
 
@@ -215,11 +215,11 @@ const LandingPage = () => {
             <section className="educationSection" id="education">
               <motion.div className="frostedGlassCard" {...motionFrostedGlass}>
                 <h2>Education</h2>
-                <h4>University of Melbourne</h4>
+                <span className="schoolName">University of Melbourne</span>
                 <p>
                   Design Computing <span className="timeframe">| 2022 - Present</span>
                 </p>
-                <h4>Harvard Business School Online</h4>
+                <span className="schoolName">Harvard Business School Online</span>
                 <p>
                   Negotiation Mastery <span className="timeframe">| 2021</span>
                 </p>
@@ -229,7 +229,7 @@ const LandingPage = () => {
                 <p>
                   Disruptive Strategy <span className="timeframe">| 2019</span>
                 </p>
-                <h4>University of Technology Sydney</h4>
+                <span className="schoolName">University of Technology Sydney</span>
                 <p>
                   Business and Science <span className="timeframe">| 2017 - 2018</span>
                 </p>

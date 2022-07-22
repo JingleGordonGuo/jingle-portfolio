@@ -74,6 +74,9 @@ export const LandingPageDiv = styled.div`
   }
 
   .educationSection {
+    .schoolName {
+      font-weight: 700;
+    }
     p {
       margin-left: 44px;
     }
