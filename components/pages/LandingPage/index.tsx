@@ -171,7 +171,7 @@ const LandingPage = () => {
                   It was an ambitious project I was fortunate to be a part of that truly kickstarted my passion for
                   front-end development. We worked with technologies such as WebRTC to enable voice and video streaming.
                   To make users feel like they were in the same room, we designed a unique 3D voice chat system that
-                  allowed users to hear their friend's voices as if they were sitting right next to each other.
+                  allowed users to hear their friend&apos;s voices as if they were sitting right next to each other.
                 </p>
                 <div className="techUsedBox">
                   <IconTypeScript subtle />
