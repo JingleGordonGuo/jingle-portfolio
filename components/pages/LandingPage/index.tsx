@@ -81,9 +81,9 @@ const LandingPage = () => {
                   {/* <Image src="/profile.jpg" width={160} height={160} className="profilePic" /> */}
                   <img src="/profile.jpg" className="profilePic" alt="Profile Picture" />
                 </div>
-                <p>Well, I am a start-up guy who discovered how rewarding building web apps felt.</p>
+                <p>Well, I am a startup guy who discovered how rewarding building web apps felt.</p>
                 <p>
-                  I specialize in React and used a variety of tools alongside it such as NextJS and Typescript to get
+                  I specialise in React and use a variety of tools alongside it, such as NextJS and Typescript, to get
                   things done.
                 </p>
                 <p>
@@ -131,12 +131,12 @@ const LandingPage = () => {
                 </a>
                 <p className="role">Full-stack developer</p>
                 <p>
-                  ButterVoice is an web and future mobile app that you can share short digestible clips of audio for
+                  ButterVoice is a web and future mobile app where you can share short, digestible audio clips for
                   others to enjoy.
                 </p>
                 <p>
                   This is a personal project I have been working on in my spare time to sharpen my skills as a web
-                  developer. My goal is to create it first as a progressive web app, and eventually convert it into an
+                  developer. My goal is to create it first as a progressive web app, then eventually convert it into an
                   IOS and Android application through Capacitor.
                 </p>
                 <div className="techUsedBox">
@@ -168,10 +168,10 @@ const LandingPage = () => {
                 </a>
                 <p>Comova was a social platform for users to watch videos and play games together.</p>
                 <p>
-                  This was an ambitious project I was fortunate to be a part of that really kickstarted my passion for
+                  It was an ambitious project I was fortunate to be a part of that truly kickstarted my passion for
                   front-end development. We worked with technologies such as WebRTC to enable voice and video streaming.
-                  In order to make users feel like they were in the same room, we designed a special 3D voice chat
-                  system that allowed users to hear their friends voice as if they were sitting right next to them.
+                  To make users feel like they were in the same room, we designed a unique 3D voice chat system that
+                  allowed users to hear their friend's voices as if they were sitting right next to each other.
                 </p>
                 <div className="techUsedBox">
                   <IconTypeScript subtle />
@@ -195,22 +195,18 @@ const LandingPage = () => {
               <motion.div className="frostedGlassCard" {...motionFrostedGlass}>
                 <h3>BacPoc</h3>
                 <p className="role">Co-founder | Business Development Manager | Graphics Designer</p>
-                <a
-                  href="https://incubate.org.au/wp-content/uploads/2020/03/Incubate_DemoDayBooklet_Class-12-Winter-2018.pdf"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  BacPoc INCUBATE Booklet
+                <a href="https://www.youtube.com/watch?v=CKoQ_XhI2Qs" target="_blank" rel="noreferrer">
+                  BacPoc Demo Day Pitch
                 </a>
                 <p>
-                  BacPoc was a Lost and Found management system designed to centralised the Lost and Found process for
+                  BacPoc was a Lost and Found management system designed to centralise the Lost and Found process for
                   organisations and individuals.
                 </p>
                 <p>
-                  Part of Cohort 12 of University of Sydney’s accelerator program INCUBATE, I mainly led the business
-                  aspect of the startup. At the height of this project, our system was serving universities such as the
-                  University of Technology Sydney and Australia Catholic University. We were also in talks with Mirvac
-                  and other Universities with getting them to adopt the system before the impact of Covid.
+                  Part of Cohort 12 of the University of Sydney accelerator program INCUBATE, I mainly led the business
+                  aspect of the startup. At our peak, our system served universities such as the University of
+                  Technology Sydney and Australia Catholic University. We were also in talks with Mirvac and other
+                  Universities on getting them to adopt the system before the impact of Covid.
                 </p>
                 <div className="techUsedBox">
                   <IconPhotoshop subtle />
