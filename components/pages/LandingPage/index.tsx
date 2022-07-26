@@ -42,15 +42,6 @@ const LandingPage = () => {
       <Head>
         <title>Jingle Gordon Guo</title>
         <meta name="description" content="My Portfolio" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
-        <link rel="manifest" href="/favicon/site.webmanifest" />
-        <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#c4a3ca" />
-        <meta name="apple-mobile-web-app-title" content="Jingle Gordon Guo" />
-        <meta name="application-name" content="Jingle Gordon Guo" />
-        <meta name="msapplication-TileColor" content="#c4a3ca" />
-        <meta name="theme-color" content="#c4a3ca" />
       </Head>
 
       <AnimatePresence>{!loaded && <LoadingScreen key="loadingScreen" />}</AnimatePresence>
